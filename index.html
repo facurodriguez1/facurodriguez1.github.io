@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarShop</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+ <div class="pageNav">
+     <h1>GuitarShop</h1>
+     <button id="checkout" class="button-checkout" onclick="pagar()">Pagar</button>
+ </div>
+  <div id="mostarCompra"> 
+    <h1 id="resCompra1"></h1>
+    <h2 id="resCompra2"></h2>
+    <h3 id="resCompra3"></h3>
+</div>
+<div class="pageContent">
+    <div class="productos">
+    <h3>Fender Stratocaster</h3>
+    <img src="img/strato.png" alt="">
+    <h3>$370000</h3>
+    <button class="button-add1" onclick="add('Fender Stratocaster', 370000)">Agregar</button>
+    <div id="alertaCompra1"></div>
+</div>
+<div class="productos">
+    <h3>Fender Telecaster</h3>
+    <img src="img/telecaster.png" alt="">
+    <h3>$400000</h3>
+    <button class="button-add2" onclick="add('Fender Telecaster', 400000)">Agregar</button>
+    <div id="alertaCompra2"></div>
+</div>    
+<div class="productos">
+    <h3>Gibson Les Paul</h3>
+    <img src="img/gibson.png" alt="">
+    <h3>$550000</h3>
+    <button class="button-add3" onclick="add('Gibson Les Paul', 550000)">Agregar</button>
+    <div id="alertaCompra3"></div>
+</div>
+<div class="productos">
+    <h3>Epiphone Sg</h3>
+    <img src="img/sg.png" alt="">
+    <h3>$200000</h3>
+    <button class="button-add4" onclick="add('Epiphone Sg', 200000)">Agregar</button>
+    <div id="alertaCompra4"></div>
+</div>
+<div class="productos">
+    <h3>Fender Starcaster</h3>
+    <img src="img/starcaster.png" alt="">
+    <h3>$150000</h3>
+    <button class="button-add5" onclick="add('Fender Starcaster', 150000)">Agregar</button>
+    <div id="alertaCompra5"></div>
+</div>
+<div class="productos">
+    <h3>Gretsch</h3>
+    <img src="img/gretsch.png" alt="">
+    <h3>$200000</h3>
+    <button class="button-add6" onclick="add('Gretsch', 200000)">Agregar</button>
+    <div id="alertaCompra6"></div>
+</div>
+
+<footer>
+    <form id="formulario" class="col-6">
+        <div class="mb-3">
+            <label class="form-label">Ingrese su nombre</label>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ingrese su email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Desea recibir notificaciones?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <div id="resultado" class="col-3"></div>
+</footer>
+
+ 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <script src="js/bootstrap.js"></script>
+</body>
+</html>
